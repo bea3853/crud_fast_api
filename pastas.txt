@@ -1,1 +1,29 @@
 
+:: 1. Criando as pastas do Backend (FastAPI) e Frontend (Streamlit)
+mkdir "app"
+mkdir "app\config"
+mkdir "app\models"
+mkdir "app\schemas"
+mkdir "app\routers"
+mkdir "streamlit_app"
+
+:: 2. Criando os arquivos da estrutura FastAPI (Controllers e Models)
+type nul > "app\__init__.py"
+type nul > "app\main.py"
+type nul > "app\config\__init__.py"
+type nul > "app\config\database.py"
+type nul > "app\models\__init__.py"
+type nul > "app\models\item_model.py"
+type nul > "app\schemas\__init__.py"
+type nul > "app\schemas\item_schema.py"
+type nul > "app\routers\__init__.py"
+type nul > "app\routers\item_router.py"
+
+:: 3. Criando o arquivo do Streamlit (View)
+type nul > "streamlit_app\app.py"
+
+:: 4. Criando os arquivos de configuração do projeto, Git e Deploy
+type nul > ".env"
+type nul > ".gitignore"
+type nul > "README.md"
+type nul > "requirements.txt"
